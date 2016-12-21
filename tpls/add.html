@@ -1,0 +1,54 @@
+<div class="input" ng-controller="add">
+    <div class="title">
+        <div class="biaoti">
+        新闻标题
+        </div>
+        <input type="text" ng-model='tit'>
+    </div>
+    <div class="content">
+        <div  class="biaoti">
+        新闻内容
+        </div>
+        <textarea  cols="80" rows="10" ng-model='con'></textarea>
+    </div>
+    <input type="button" value="发布新闻" ng-click='add()'>
+</div>
+<style>
+.input{
+    width:90%;
+    margin:30px auto;
+}
+.input label{
+    width:70px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+}
+.input input[type=text]{
+    width:500px;
+    height:40px;
+}
+.content{
+    margin:30px 0;
+    
+}
+.content .biaoti{
+    vertical-align:middle;
+}
+.content textarea{
+    vertical-align:middle;
+}
+.input input[type=button]{
+    width:120px;
+    height:40px;
+    outline:0;
+    border:0;
+    color:#fff;
+    background-color:#008BF4;
+    margin-left:70px;
+    padding:0;
+}
+.input input[type=button]:active{
+    opacity:.5;
+}
+</style>
